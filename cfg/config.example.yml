@@ -1,0 +1,8 @@
+log-level: WARN
+hydra-status-url: "https://api.hydrawise.com/api/v1/statusschedule.php"
+hydra-api-key: "XXXX-XXXX-XXXX-XXXX"
+hydra-sleep: 60
+shelly-ip: "http://192.168.12.12/"
+shelly-status-url: "rpc/Shelly.GetStatus"
+shelly-switch-url: "rpc/Switch.Set"
+shelly-switch-id: "0"

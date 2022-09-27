@@ -1,0 +1,7 @@
+Frage minütlich den statusschedule von hydra ab:
+
+- Wenn eines der Relays den time wert < 60 hat (1 bedeutet running), hole den Shelly status
+    - wenn Shelly Status off -> Schalte Shelly an
+
+- Wenn keins der Relays einen time wert < 60 hat, hole den Shelly Status
+    - Wenn Shelly Status on -> Schalte Shelly aus
