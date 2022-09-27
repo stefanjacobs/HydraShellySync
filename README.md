@@ -1,6 +1,6 @@
 # Sync Hydrawise watering system with Shelly actor
 
-Because my pressure pump sensor is broken, the pump was running a lot (expensive hobby :-( ). I decided to integrate a Shelly PM 1 plus sensor/actor to the circle and remove the pressure pump sensor that normally activates/deactivates the pump.
+Because my pressure pump sensor is broken, the pump was running a lot (expensive watering solution :-( ). I decided to integrate a Shelly PM 1 plus sensor/actor to the circle and remove the pressure pump sensor that normally activates/deactivates the pump.
 
 Nowadays the pump is activated, when the Hydrawise needs it and is deactivated, when it is no longer needed. This small python project realizes just that.
 
@@ -24,7 +24,7 @@ To run this on a server, you may have to integrate cron or use [pm2](https://pm2
 
 ## Configuration
 
-An example configuration can be seen in `cfg/config.example.yml`:
+An example configuration can be seen in `cfg/config.example.yml`, just make a copy of it and name it in cfg and name it `cfg/config.yml`:
 
 ```yaml
 log-level: WARN
