@@ -8,19 +8,26 @@ Take care: The server this script is running on, should be in the local area net
 
 ## Installation
 
-The `poetry` package is needed for this project to install all necessary dependencies. When poetry is available, you just need to install the dependencies using the following command:
+Das Projekt nutzt `uv` als Paketmanager. Einmalig Abhängigkeiten installieren:
 
 ```bash
-poetry install
+cd /home/pi/tools/hydraShellySync
+uv sync
 ```
 
-When this is finished, you may run the script with
+Danach das Skript starten:
 
 ```bash
-poetry run python app.py
+uv run app.py
 ```
 
-To run this on a server, you may have to integrate cron or use [pm2](https://pm2.keymetrics.io/).
+Oder direkt via Python aus dem `.venv`:
+
+```bash
+.venv/bin/python app.py
+```
+
+Für den Dauerbetrieb auf einem Server bietet sich [pm2](https://pm2.keymetrics.io/) oder ein systemd-Service an.
 
 ## Configuration
 
