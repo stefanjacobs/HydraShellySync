@@ -1,16 +1,11 @@
-[tool.poetry]
+[project]
 name = "hydrawise"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = [{name = "HydraShellySync"}]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-requests = "^2.28.1"
-PyYAML = "^6.0"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.28.1",
+    "pyyaml>=6.0",
+]
